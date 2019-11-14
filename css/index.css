@@ -408,8 +408,17 @@ footer h6 {
   overflow: hidden;
  }
 
+ .para {
 
- .middle-section {
+  margin: 0 150px 0 0;
+ }
+
+ .pare {
+
+  margin: 0 150px 0 0;
+ }
+
+ 0 .middle-section {
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -422,6 +431,7 @@ footer h6 {
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
+
 
  }
 
