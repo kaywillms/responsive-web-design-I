@@ -1,3 +1,442 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker&display=swap");
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+ display: block;
+}
+
+body {
+ line-height: 1;
+}
+
+ol,
+ul {
+ list-style: none;
+}
+
+blockquote,
+q {
+ quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+ content: "";
+ content: none;
+}
+
+table {
+ border-collapse: collapse;
+ border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+ box-sizing: border-box;
+}
+
+html,
+body {
+ height: 100%;
+ /* font-family: 'Titillium Web', sans-serif; */
+ font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+ /* font-family: 'Bangers', cursive; */
+ font-family: "Permanent Marker", cursive;
+ letter-spacing: 1px;
+ margin-bottom: 15px;
+}
+
+/* Your code starts here! */
+#wrapper {
+ width: 1024px;
+ margin: 0 auto;
+}
 
 
+
+
+/*navigation*/
+.nav {
+ overflow: hidden;
+ top: 0;
+ width: 100%;
+}
+
+.nav a {
+ float: left;
+ color: #0a0a0a;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ font-size: 17px;
+ margin-top: 2rem;
+}
+
+.nav a:hover {
+ background: #ddd;
+ color: black;
+ cursor: pointer;
+}
+
+.logo {
+ display: inline-block;
+ background: url("https://i.imgur.com/RoKbjZH.png");
+ width: 183px;
+ height: 36px;
+ margin: -2rem 0 0 40rem;
+ vertical-align: middle;
+}
+
+header .iov {
+ display: inline-block;
+ font-size: 75px;
+ text-align: center;
+ vertical-align: middle;
+ margin-top: 50px;
+ margin-right: 60px;
+}
+
+.header-image {
+ display: inline-block;
+ background: url("https://i.imgur.com/Hw8avII.png");
+ vertical-align: middle;
+ width: 379px;
+ height: 379px;
+ margin-left: 60px;
+ margin-top: 50px;
+}
+
+.button {
+ display: block;
+ width: 180px;
+ height: 30px;
+ font-size: 20px;
+ border: 1px solid black;
+ padding: 5px 20px;
+ margin: 0 auto;
+ margin-top: 30px;
+}
+
+.button:hover {
+ cursor: pointer;
+ box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+  0 17px 50px 0 rgba(0, 0, 0, 0.19);
+ background-color: #4CAF50;
+ /* Green */
+ color: white;
+ cursor: pointer;
+ border: solid 3px white;
+
+}
+
+.top-section {
+ padding: 40px 0;
+ font-size: 18px;
+}
+
+.top-section div {
+ display: inline-block;
+ width: 500px;
+ margin: 0 auto;
+ margin-right: 10px;
+}
+
+.top-section div:last-child {
+ margin-right: 0;
+}
+
+.middle-section img {
+ width: 100%;
+}
+
+.middle-img {
+ height: auto;
+ width: 100%;
+}
+
+.bottom-section {
+ padding: 40px 0;
+ font-size: 18px;
+ border-bottom: 1px solid black;
+}
+
+.bottom-section div {
+ display: inline-block;
+ width: 330px;
+ margin: 0 auto;
+ margin-right: 10px;
+}
+
+.bottom-section div:last-child {
+ margin-right: 0;
+}
+
+.contact {
+ padding: 40px 0;
+}
+
+footer {
+ padding: 40px 0;
+ height: 150px;
+}
+
+footer h6 {
+ text-align: center;
+}
+
+/*Media Queary*/
+@media(max-width: 800px) {
+ .header-image {
+  display: none;
+ }
+
+ #wrapper {
+  width: 96%;
+  min-height: 200px;
+  position: relative;
+  margin: 0 auto;
+
+ }
+
+ .logo {
+  display: flex;
+  justify-content: center;
+  margin: -15rem 1rem 0 13rem;
+
+
+ }
+
+ .nav a {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0 10rem 2px;
+
+ }
+
+ .iov {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 7rem;
+ }
+
+ .top-section {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  margin-top: 5rem;
+ }
+
+ .middle-section {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 0 10px;
+
+ }
+
+ .bottom-section {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+ }
+
+
+ #contact {
+  margin-bottom: 5rem;
+ }
+
+ .copy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+ }
+
+
+
+}
+
+@media(max-width: 500px) {
+ .header-image {
+  display: none;
+ }
+
+ #wrapper {
+  width: auto;
+  min-height: 200px;
+  position: relative;
+  margin: 0 auto;
+
+
+ }
+
+ .logo {
+  display: flex;
+  justify-content: center;
+  margin: -21rem 1rem 18rem 7rem;
+ }
+
+ .nav a {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 9rem -4rem 9rem;
+
+ }
+
+ .iov {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 0 3rem;
+ }
+
+ h1 {
+  font-size: 50px;
+ }
+
+ .top-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+  overflow: hidden;
+ }
+
+
+ .middle-section {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  height: auto;
+  margin-right: 5px;
+ }
+
+ .bottom-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1rem;
+
+ }
+
+
+ #contact {
+
+  margin: 0 0 3rem 7rem;
+ }
+
+ .copy {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+ }
+
+
+
+}
